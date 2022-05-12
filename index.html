@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function validation() {
+                let username = document.getElementById("username");
+                let password = document.getElementById("password");
+                if(username.valid=="rajni" && password.valid==11223344) {
+                        return alert("login success")
+                }
+                else {
+                    alert("Enter correct details")
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <form>
+        <h1>Registration</h1>   
+        <label>User Name</label>
+        <input type="text" placeholder="enter your username" id="username" required> </br>
+        <label>Password</label>
+        <input type="password" placeholder="enter password" id="password" required> </br>
+        <button onclick="validation()">Login</button>
+
+
+       </form> 
+    </body>
+    
+</html>

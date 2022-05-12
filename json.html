@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function validate() {
+              let name = document.getElementById("userName").value;
+              if(name == "" ) {
+                  document.getElementById("msg").innerHTML="please enter username"
+              }
+              if(name.length < 6) {
+                  document.getElementById("msg").innerHTML="min 6 characters"
+               return false
+              }
+            }
+        </script>       
+    </head> 
+
+    <body>
+        <h1>Registration</h1>
+        <form onsubmit="return validate()">
+            <label>User Name</label>
+            <input type="text" id="userName">    </br>
+            <span id="msg" style="color: red;"></span> </br>
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
